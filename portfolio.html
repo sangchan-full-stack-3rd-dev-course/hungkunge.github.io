@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <style>
+        .profileHeader {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .profileNeck {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profileBody {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            gap: 100px;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .name {
+            color :darkgreen;
+        }
+
+        .info {
+            color :blue;
+        }
+
+        .contact {
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+
+        .project {
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-around;
+        }
+
+        .card_img {
+            width : 200px;
+            height : 200px;
+        }
+
+        .card_btn {
+            width: fit-content;
+            height: 30px;
+        }
+
+        .card_title {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body style="width:800px">
+    <h1>
+        <span class="name">박상찬</span>의 포트폴리오
+    </h1>
+    <div class="profileHeader">
+        <img style="width: 100px; height: 100px;" src="./img/whoAmI.jpg">
+        <div style="display: flex; justify-content: center; align-items: center; margin-left: 10px;">
+            안녕하세요
+            <br>
+            백엔드 개발자를 목표로 하는 박상찬입니다.
+            <br>
+            프로젝트를 소개합니다.
+        </div>
+    </div>
+    <div class="profileNeck">
+        <div>E-MAIL : <span class="info">gkgk00142@naver.com</span></div>
+        <div>PHONE : <span class="info">010-6336-5171</span> </div>
+    </div>
+    <div class="profileBody">
+        <input class="card_btn" type="button" value="blog" 
+                onclick="location.href='https://hungkunge.tistory.com/'">
+        <input class="card_btn" type="button" value="github" 
+        onclick="location.href='https://github.com/HungKungE'">
+    </div>
+    <div>
+        <h1 style="margin-bottom: 20px;">Project</h1>
+        <div class="project">
+            <div style="display:inline">
+                <img class="card_img" src="./img/zido.png">
+                <div style="margin-bottom: 10px;">
+                    <a class="card_title" href="https://github.com/HungKungE/FINDVIBE"> FIND-VIBE </a>
+                </div>
+                <div class="card_content">사진을 찍은 장소를 분석해서 알려주는 웹 서비스</div>
+            </div>
+            <div>
+                <img class="card_img" src="./img/kk.png">
+                <div style="margin-bottom: 10px;">
+                    <a class="card_title" href="https://github.com/HungKungE/KeywordKatch-Publisher"> KEYWORD-KATCH </a>
+                </div>
+                <div class="card_content">관심 키워드에 딱 맞는 기사를 추천하는 웹 서비스</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
